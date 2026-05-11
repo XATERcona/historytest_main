@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Kyiv Type Sans";
+    src: url(../fonts/KyivTypeSans-VarGX.ttf);
+}
+
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    font-family: "Kyiv Type Sans";
+}
+
+header a, main h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrap{
+    width: 1440px;
+    margin: auto;
+    max-width: 100%;
+    background-size: cover;
+    background-image: url(https://nesterenko.arts.mos.ru/activity/konkursy/voenno-istoricheskaya-zhivopis/1.%20Москва%20встречает%20героев%20Полтавы.jpg);
+    height: 100vh;
+    opacity: 0.7;
+}
+
+body{
+    background: #484849;
+}
+    
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    background-color: #262626d6;
+    border-bottom: 1px solid #fff;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.nav{
+    margin: 20px;;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p, .logo h1{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    justify-content: center; 
+    min-height: 80vh;       
+}
+
+.box{
+    margin: auto;
+    margin-top: 100px;
+    max-width: 900px;
+    border-radius: 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid rgba(67, 67, 67, 0.895);
+    border-radius: 15px;
+    gap: 2px;
+    height: 320px;
+    background-color: rgba(231, 231, 231, 0.8);
+}
+
+form h1, #submit{
+     font-family: "Kyiv Type Sans";
+     font-weight: bolder;
+}
+
+form h1{
+    margin: 5px;
+}
+
+p, label,.logo h1{
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-word; 
+}
+
+p{
+    display: flex;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+label{
+    font-size: 25px;
+}
+
+input{
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    font-size: 25px;
+    background-color: black;
+    color:rgba(199, 199, 199, 0.8) ;
+    margin: 10px 0px 10px 0px;
+    width: 100px;
+}
+
+form a{
+text-decoration: none;
+color: #0067c7;
+}
+
+p, label,.logo h1{
+    font-family: "Kyiv Type Sans";
+    font-weight: 100;
+}
+
+@media (min-width: 350px) {
+    p a{
+    font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .box{
+        width: 40%;
+    }
+
+    label, #submit{
+    font-size: 20px;
+    }
+
+    p a{
+    font-size: 15px;
+    }
+}
+

@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "Kyiv Type Sans";
+    src: url(../fonts/KyivTypeSans-VarGX.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, .sl p,a{
+    color: #fff;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    white-space: nowrap;
+}
+
+h1, h2{
+    font-family: "Kyiv Type Sans";
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #484849;
+}
+
+header, .name, .test{
+    background: #26262667;
+}
+
+
+
+.wrap{
+    width: 360px;
+    margin: auto;
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    height: 60px;
+    border-bottom: 1px solid #fff;
+}
+
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+p{
+    font-size: 15px;
+}
+
+header a{
+    font-size: 14px;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    margin-left: 53%;
+    align-items: center;
+}
+
+.slider {
+    overflow: hidden;
+    height: 70%;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease; 
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(134, 135, 136);
+    height: 40vh;
+    background-color: #868689;
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 360px;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.7;
+    display: block; 
+}
+
+h3, h4{
+    font-size: 25px;
+    position: absolute;
+}
+
+.sl{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    font-size: 18px;
+    margin-bottom: 45px;
+    gap: 20%;
+}
+
+.sl p{
+    margin: auto;
+    white-space: nowrap
+}
+
+.dots{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: #656566;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.dot.active{
+    border: 1px solid #fff;
+}
+
+.name{
+    height: 3vh;
+}
+
+.name p{
+    font-size: 15px;
+    margin-left: 45%;
+}
+
+.tests, .quaTime{
+    display: flex;
+}
+
+.tests{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.test .link {
+    position: relative;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.test img {
+    height: 15vh;
+    width: 360px;
+    max-width: 100%; 
+    object-fit: cover;
+    opacity: 0.7;
+    display: block;
+    border: 1px solid #fff;
+}
+
+.quaTime, .level {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+}
+
+.quaTime{
+    top: 10%;
+    left: 50%;
+}
+
+.level {
+    margin-left: 10px;
+    margin-top: -25px;
+}
+
+.test .text {
+    max-height: 0;
+    font-size: 12px;
+    overflow: hidden;
+    background: #393939;
+    color: #e0e0e0;
+}
+
+
+.test.active .text {
+    max-height: 50px; 
+    margin-bottom: 10px;
+}
+
+.test.active .text p{
+    text-align: center;
+}
+
+.test.active .text a{
+    display: block;
+    font-size: 18px;
+    margin-left: 230px;
+    justify-content: center;
+    color: #929b9f;
+}
+
+@media( min-width: 1024px ){
+    .test img {
+        height: 30vh;
+    }
+}

@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Kyiv Type Sans";
+    src: url(../fonts/KyivTypeSans-VarGX.ttf);
+}
+
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1440px;
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(https://i.pinimg.com/736x/30/73/11/3073111180e8a2979bcb1554ae1ce616.jpg);
+}
+
+body{
+    background: #484849;
+}
+    
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    background-color: #262626da;
+    border-bottom: 1px solid #fff;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.logo h1{
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-family: "Kyiv Type Sans";
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main h1{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-word; 
+    font-family: "Kyiv Type Sans";
+    color: #ffffff;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #262626da;
+}
+
+
+.history{
+    background-color: rgb(255, 255, 255, 0.8);
+    z-index: 100;
+    width: 80%;
+    height: 80vh;
+    padding-top: 5px;
+}
+
+.sessio{
+    display: flex;
+    flex-direction: row;
+    justify-content:  center;
+    gap: 30px;
+}
+
+.sessio p{
+    font-size: 10px;
+}
+
+.round, .label, .score{
+    font-family: "Kyiv Type Sans";
+     word-wrap: normal;
+    word-break: break-word; 
+    align-items: center;
+    padding: 2px;
+
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 2px dotted black;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}

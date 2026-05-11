@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Kyiv Type Sans";
+    src: url(../fonts/KyivTypeSans-VarGX.ttf);
+}
+
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #484849;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    max-width: 100%;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgba(121, 117, 117, 0.8);
+    border-bottom: 1px solid #fff;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+}
+.logo h1, p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    color: #ffffff;
+    font-family: "Kyiv Type Sans";
+    font-weight: 100;
+}
+header a{
+    text-decoration: none;
+    color: #cacaca;
+}
+#parent{
+    margin: 0 auto;
+    max-width: 880px;
+    margin-top: 40px;
+    background: #f2f2f2a0;
+}
+.tab{
+    margin-bottom: 10px;
+}
+.tab .link a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    background: #f8f8f8;
+    border: 1px solid gray;
+}
+.tab .link:hover a {
+    background: #f2f2f2;
+}
+.tab:not(.active) .text{
+    display: none;
+}
+.tab .text {
+    border: 1px dashed gray;
+    border-top: none;
+    padding: 10px;
+    min-height: 300px;
+}
+.scen{
+    width: 600px;
+    overflow: hidden; 
+    margin: auto;
+    min-height: 200px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid rgba(67, 67, 67, 0.895);
+    border-radius: 15px;
+    gap: 2px;
+    min-height: 250px;
+    background-color: rgba(231, 231, 231, 0.8);
+}
+form h3, #submit{
+     font-family: "Kyiv Type Sans";
+     font-weight: bolder;
+}
+p{
+    font-family: "Kyiv Type Sans";
+}
+form h3{
+    margin: 5px;
+}
+p, label,.logo h1{
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-word; 
+}
+label{
+    font-size: 25px;
+}
+input, button, select{
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#submit{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color:rgba(199, 199, 199, 0.8) ;
+    margin: 10px 0px 10px 0px;
+    border: 0;
+    font-size: 16px;
+}
+h3{
+    max-width: 70%;
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    max-width: 880px;
+    border-radius: 50px;
+    background-color: #4848498b;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    border: 1px solid #000000;
+}
+.top p{
+    text-decoration: none;
+    color:#ffffff;
+    background: black;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 880px;
+    flex-wrap: wrap;
+}
